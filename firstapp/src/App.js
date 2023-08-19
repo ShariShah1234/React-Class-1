@@ -65,46 +65,46 @@ import './App.css';
 // //   </div>
 
 // }
-function App() {
-const [text,setText] = useState("")
-const [list,setList] = useState([])
+// function App() {
+// const [text,setText] = useState("")
+// const [list,setList] = useState([])
 
-let add =()=>{
-  console.log(list)
-  list.push(text)
-  setList([...list])
-  setText("")
-  // setList([...list])
+// let add =()=>{
+//   console.log(list)
+//   list.push(text)
+//   setList([...list])
+//   setText("")
+//   // setList([...list])
 
-}
-let del =(i)=>{
-  list.splice(i,1)
-  setList([...list])
-}
- let edit =(i)=>{
-  console.log(list[i])
-  let x = prompt("enter value")
-  list[i]= x
-  setList([...list])
+// }
+// let del =(i)=>{
+//   list.splice(i,1)
+//   setList([...list])
+// }
+//  let edit =(i)=>{
+//   console.log(list[i])
+//   let x = prompt("enter value")
+//   list[i]= x
+//   setList([...list])
 
- }
+//  }
 
-  return <div> 
+//   return <div> 
          
-    <input value={text} onChange={(e)=>{setText(e.target.value)}}/>
-    <button onClick={add}>Add</button>
-    {list.map((x,i)=>(
-      <p key={i}>
-        {x}
-        <button onClick={()=>del(i)}>DEL</button>
-         <button onClick={()=>edit(i)}>edit</button> 
+//     <input value={text} onChange={(e)=>{setText(e.target.value)}}/>
+//     <button onClick={add}>Add</button>
+//     {list.map((x,i)=>(
+//       <p key={i}>
+//         {x}
+//         <button onClick={()=>del(i)}>DEL</button>
+//          <button onClick={()=>edit(i)}>edit</button> 
       
-      </p>
-    ))}
-  </div>
+//       </p>
+//     ))}
+//   </div>
 
-}
-export default App;
+// }
+// export default App;
 
 
 /////component//////
